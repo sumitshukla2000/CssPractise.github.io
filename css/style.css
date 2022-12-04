@@ -70,13 +70,13 @@ nav ul li:hover{
     width: 15rem;
     height: 15rem;
     transition:0.3s all ease;
-    animation:round 4s linear infinite;
+    animation:round 3s linear infinite;
 }
-@keyframes round{
+/* @keyframes round{ */
     /* 0%{
         transform: rotate(30deg);
     } */
-    10%{
+    /* 10%{
         transform: rotate(30deg);
     }
     20%{
@@ -106,8 +106,13 @@ nav ul li:hover{
     100%{
         transform: rotate(360deg);
     }
-}
+} */
 
+@keyframes round{
+    100%{
+        transform: rotate(360deg);
+    }
+}
 .product{
     margin: 0 auto;
     margin-top: 40px;
@@ -163,4 +168,11 @@ nav ul li:hover{
 
 @media only screen and (max-width:1200px){
 
+}
+
+@media only screen and (max-width:415px) {
+        .canvas img{
+            width: 80%;
+            height: 30vh;
+        }
 }

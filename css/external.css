@@ -376,8 +376,8 @@ small{
 
 @media only screen and (max-width:1100px){
         .section img{
-            width: 20rem;
-            height: 10rem;
+            width: 25rem;
+            height: 15rem;
         }
         .changable{
             width: 70%;
@@ -400,6 +400,13 @@ small{
             left: 27rem;
             top: 2.6rem;
         }
+        .box{
+            left:12%;
+            min-width: 80%;
+        }
+        .box p{
+            font-size: 3rem;
+        }
 }
             
 @media only screen and (max-width:992px){
@@ -407,12 +414,19 @@ small{
         width: 70%;
     }
     .section img{
-        width: 18rem;
-        height: 10rem;
+        width: 23rem;
+        height: 13rem;
     }
 
     .input-data .img{
         top: 2.6rem;
+    }
+    .box{
+        left:12%;
+        min-width: 80%;
+    }
+    .box p{
+        font-size: 2rem;
     }
 }
 
@@ -503,9 +517,13 @@ small{
 }
 
 @media only screen and (max-width:415px){
+    .boxes{
+        margin-top: 10rem;
+    }
     .section img{
-        width: 15rem;
-        height: 7.5rem;
+        width: 20rem;
+        height: 10rem;
+        margin-top: -8rem;
     }
     .row{
         flex-wrap: wrap;
