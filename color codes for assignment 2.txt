@@ -1,0 +1,9 @@
+color code for web assignment 2 (theory)
+
+rgb(98, 29, 237) - purple for download button
+
+rgb(98, 29, 237) - blue for download down button
+
+background color: rgb(0, 0, 0)
+
+font-family: Manrope,Inter,sans-serif

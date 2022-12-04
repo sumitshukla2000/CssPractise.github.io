@@ -1,0 +1,52 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+/* --primaryColor:hsl(183, 49%, 63%);
+
+--white:hsl(0, 0%, 100%);
+/* --lightblue:hsl(183, 49%, 63%);  */
+--backgroundColor:hsl(216, 19%, 16%);
+--blue:hsl(183, 100%, 35%);
+--secondaryDarkColor:hsl(217, 10%, 25%);
+--darkColor:rgb(0, 0, 0);
+--purple:rgb(98, 29, 237);
+}
+
+:root{
+/* --outfit:"Outfit" , sans-serif;
+--poppins:'Poppins', sans-serif; */
+--manrope:  "Manrope", "Inter" , sans-serif
+}
+
+/* ::-webkit-scrollbar{
+    width: 0.5rem;
+    background-color: var(--secondaryDarkColor);
+    outline: 1px solid slategray;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--secondaryDarkColor);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--blue);
+    border-radius: 2rem;
+  } */
+
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex_column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }

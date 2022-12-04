@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirected page</title>
+    <link rel="icon" href="../images/round_icon.png">
+    <link rel="stylesheet" href="../css/utility.css">
+    <style>
+        body{
+            background: var(--blue);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .container .emoji{
+            font-size: 15rem !important;
+            animation: zoom 3s linear infinite alternate-reverse;
+        }
+        @keyframes zoom {
+                0%{
+                    transform: scale(1);
+                }
+                100%{
+                    transform: scale(1.2);
+                }
+        }
+        .container p{
+            font-size: 6rem;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+       <p class="emoji">😊</p> 
+        <p>Thank You!</p>
+    </div>
+</body>
+</html>
