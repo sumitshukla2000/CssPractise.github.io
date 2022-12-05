@@ -58,10 +58,10 @@ body{
     transform: scale(1.1);
 }
 .up{
-    transform: translateY(-800px);
+    transform: translateY(-2000px);
 }
 .left{
-    transform: translateX(1000px);
+    transform: translateX(2000px);
 }
 .boxes{
     margin: 0 auto;
