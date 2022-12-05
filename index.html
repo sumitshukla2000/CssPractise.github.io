@@ -8,15 +8,18 @@
     <link rel="stylesheet" href="css/utility.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/external.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Screen Studio</title>
 </head>
 <body>
 
     <div class="box">
+
         <img src="images/cross.png" width="60px" class="image_cross">
             <p>“The nitrogen in our DNA, the calcium in our teeth, the iron in our blood, the carbon in our apple pies were made in the interiors of collapsing stars. We are made of starstuff.”</p>
             <p style="font-weight: 800; letter-spacing: 2px;">-Carl Segan</p>
             <div class="lets">Let's Go</div>
+
     </div>
 
 
@@ -221,9 +224,14 @@
                 <div class="row">
                     <div class="input-data" id="pass_left">
                         <label>Password</label>
-                        <input type="password" class="input" id="pass" required>
+                        <input type="password" class="input same" id="pass" required>
                         <img  src="images/tick.png" alt="" width="20px" height="20px"  class="img img1">
                         <img  src="images/wrong.png" alt="" width="20px" height="20px"  class="img img2">
+                        <!-- password visibility -->
+                        <!-- hidden -->
+                        <i  onclick="hid()" class="fa-solid fa-eye-slash"></i> 
+                        <!-- unhidden -->
+                        <i  onclick="hid()" class="fa-solid fa-eye"></i>
                         <small>Animation</small>
                     </div>
                     
@@ -232,9 +240,14 @@
                 <div class="row">
                     <div class="input-data" id="pass2_left">
                         <label>Confirm Password</label>
-                        <input type="password" class="input" id="pass2" required>
+                        <input type="password" class="input same" id="pass2" required>
                         <img  src="images/tick.png" alt="" width="20px" height="20px"  class="img img1">
                         <img  src="images/wrong.png" alt="" width="20px" height="20px"  class="img img2">
+                        <!-- password visibility -->
+                        <!-- hidden -->
+                        <i onclick="hid2()" class="fa-solid fa-eye-slash icon"></i> 
+                        <!-- unhidden -->
+                        <i  onclick="hid2()" class="fa-solid fa-eye icon"></i>
                         <small></small>
                     </div>
                 </div>
@@ -259,14 +272,14 @@
             
             </form>
 
-            <script src="js/app.js"></script>
-
+            
             <footer class="footer"> 
                 <div class="content">
                    <p> Design from © 2022 Adam Pietrasiak. All rights reserved.
                 </p>
                 </div>
             </footer>
+            <script src="js/app.js"></script>
         </div>
 </body>
 </html>

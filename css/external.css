@@ -355,7 +355,6 @@ small{
 .input-data.error small{
     visibility: visible;
 }
-
 .animate{
     transition: 0.5s all ease;
     animation: shaking 2s linear infinite;
@@ -372,6 +371,30 @@ small{
     }
 }
 
+/* 
+.visibility{
+    position: absolute;
+    bottom:30px;
+    left: 95%;
+}
+.con_vis{
+    top:40px;
+} */
+.fa-eye-slash , .fa-eye{
+    width: 25px;
+    height: 25px;
+    color: rgba(0, 0, 0, 0.501);
+    position: absolute;
+    bottom: 20px;
+    left: 89%;
+    cursor: pointer;
+}
+.fa-eye-slash{
+    visibility: hidden;
+}
+.icon{
+    top:44px;
+}
             /* responsive */
 
 @media only screen and (max-width:1100px){
@@ -407,6 +430,9 @@ small{
         .box p{
             font-size: 3rem;
         }
+        .fa-eye,.fa-eye-slash,.icon{
+            left: 85%;
+        }
 }
             
 @media only screen and (max-width:992px){
@@ -420,6 +446,10 @@ small{
 
     .input-data .img{
         top: 2.6rem;
+        left: 90%;
+    }
+    #add_left .img , #age_left .img, #pass_left .img , #pass2_left .img{
+        left: 93%;
     }
     .box{
         left:12%;
@@ -456,10 +486,10 @@ small{
         flex-direction: column;
     }
     .input-data .img{
-        left: 10rem;
+        left: 87%;
     }
     #add_left .img , #age_left .img, #pass_left .img , #pass2_left .img{
-        left: 25rem;
+        left: 90%;
         /* top: 2.6rem; */
     }   
     .box{
@@ -471,10 +501,16 @@ small{
     .box p{
         font-size: 1.5rem;
     }
+    .fa-eye,.fa-eye-slash,.icon{
+        left: 83%;
+    }
 }
 @media only screen and (max-width:700px) {
+    .input-data .img{
+        left: 86%;
+    }
     #add_left .img , #age_left .img, #pass_left .img , #pass2_left .img{
-        left: 20rem;
+        left: 90%;
         /* top: 2.6rem; */
     }   
 }
@@ -485,6 +521,14 @@ small{
         .box{
             left: 10%;
             width: 80%;
+        }
+        .fa-eye,.fa-eye-slash{
+            bottom: 40px;
+            left:80px;
+        }
+        .icon{
+            left: 70%;
+            bottom: 50px;
         }
 }
 @media only screen and (max-width:600px){
@@ -513,7 +557,10 @@ small{
     #radio label{
         font-size: 0.69rem;
     }
-    
+
+    .fa-eye,.fa-eye-slash,.icon{
+        left: 85%;
+    }
 }
 
 @media only screen and (max-width:415px){
@@ -559,11 +606,17 @@ small{
         left:91%;
         /* top: 2.6rem; */
     } 
+    .fa-eye,.fa-eye-slash{
+        left: 80%;
+    }
 }
 @media only screen and (max-width:380px)
 {
     .box p{
         font-size: 1.3rem;
+    }
+    .fa-eye,.fa-eye-slash{
+        left: 80%;
     }
 }
 

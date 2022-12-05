@@ -10,6 +10,51 @@ const pass2 = document.getElementById("pass2");
 const btn = document.getElementById("btn");
 const sub = document.getElementById("sub");
 
+const samePassClass = document.querySelectorAll('.same');
+
+const hide = document.querySelector(".fa-eye");
+const unhide = document.querySelector(".fa-eye-slash");
+
+const hide1 = document.querySelector(".icon");
+const unhide1 = document.querySelector(".icon");
+
+
+
+//reminder - pending for updation wiht using loop system because currently i am using separate class. which is horrible   )-;
+function hid(){
+  if(pass.type === 'password'){
+    pass.type = 'text';
+    unhide.style.visibility = 'visible';
+    hide.style.visibility = 'hidden';
+  }else{
+    pass.type = 'password';
+    unhide.style.visibility = 'hidden';
+    hide.style.visibility = 'visible';
+  }
+}
+  function hid2(){
+    if(pass2.type === 'password'){
+      pass2.type = 'text';
+      unhide1.style.visibility = 'visible';
+      hide1.style.visibility = 'hidden';
+    }else{
+      pass2.type = 'password';
+      unhide1.style.visibility = 'hidden';
+      hide1.style.visibility = 'visible';
+    }
+  }
+
+// for(let i = 0 ; i <= hide.length ; i++){
+//   hide[i].addEventListener("click" , function(){
+//     if(samePass[i].type === 'password'){
+//       samePass[i].type = 'text';
+//     }
+//     else{
+//       samePass[i].type = 'password';
+//     }
+//   })
+// }
+
 sub.addEventListener("click" , (e)=>{
     if(fname.value.length > 0 && lname.value.length > 0 && phone.value.length > 0 && email.value.length > 0 && age.value.length > 0 && add.value.length>0 && pass.value.length >= 8 && pass2.value.length >= 8){
      
