@@ -15,42 +15,76 @@
             justify-content: center;
             align-items: center;
         }
-        .container{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-        .container .emoji{
-            font-size: 15rem !important;
-            animation: zoom 3s linear infinite alternate-reverse;
-        }
-        @keyframes zoom {
-                0%{
-                    transform: scale(1);
-                }
-                100%{
-                    transform: scale(1.2);
-                }
-        }
-        .container p{
-            font-size: 6rem;
-            color: white;
-        }
-        @media only screen and (max-width:500px){
-            .container p{
-                font-size: 3rem;
-            }
-            .container .emoji{
-                font-size: 4rem;
-            }
-        }
+        .box{
+  background:wheat;
+  padding:10px;
+  border-radius: 4px;
+  display:flex;
+  min-width: 50%;
+  /* max-width:500px; */
+  height:70vh;
+  font-size:1.3rem;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+.thank{
+  text-align:center;
+  padding: 20px;
+  font-size: 2rem;
+}
+.submitted{
+  text-align:center;
+  padding: 20px;
+font-size: 1.5rem ;
+}
+.ok{
+  background:blueviolet;
+  outline:none;
+  border:none;
+  width:100%;
+  font-size: 1.1rem;
+  border-radius:4px;
+  padding:10px;
+  color:white;
+  font-weight:700;
+  cursor:pointer;
+  transition: 0.3s all ease;
+}
+.ok:hover{
+    opacity: 0.7;
+}
+.emoji{
+    font-size: 7rem;
+    margin-bottom: 30px;
+    /* background-color: red; */
+}
+
+@media only screen and (max-width:568px){
+    .box{
+        width: 80%;
+        height: 80vh;
+    }
+    .ok{
+
+    }
+}
     </style>
 </head>
 <body>
-    <div class="container">
+    <!-- <div class="container">
        <p class="emoji">😊</p> 
         <p>Thank You!</p>
-    </div>
+    </div> -->
+    <div class="box">       
+        <p class="emoji">😊</p>
+        <section class="checked">
+         <p class="thank">Thank You</p>
+          <p class="submitted">The Detail has been sucessfully submitted. Thanks!</p>
+          <button class="ok">    OK
+            </button>
+          
+          </section>
+     </box>
 </body>
 </html>
