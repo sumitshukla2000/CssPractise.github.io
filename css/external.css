@@ -560,4 +560,10 @@ small{
         /* top: 2.6rem; */
     } 
 }
+@media only screen and (max-width:380px)
+{
+    .box p{
+        font-size: 1.3rem;
+    }
+}
 
