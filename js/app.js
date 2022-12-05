@@ -11,7 +11,7 @@ const btn = document.getElementById("btn");
 const sub = document.getElementById("sub");
 
 sub.addEventListener("click" , (e)=>{
-    if(fname.value.length > 0 && lname.value.length > 0 && phone.value.length > 0 && email.value.length > 0 && age.value.length > 0 && add.value.length>0 && pass.value.length > 0 && pass2.value.length > 0){
+    if(fname.value.length > 0 && lname.value.length > 0 && phone.value.length > 0 && email.value.length > 0 && age.value.length > 0 && add.value.length>0 && pass.value.length >= 8 && pass2.value.length >= 8){
      
       if(pass.value.length === pass2.value.length){
   // redirect();
