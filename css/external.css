@@ -287,6 +287,12 @@ input[type="checkbox"]{
     bottom: 1.8rem;
     left: 16.9rem;
 }
+.fa-xmark{
+    color: red;
+}
+.fa-check{
+    color: green;
+}
 #age_left .img ,#add_left .img,#pass_left .img,#pass2_left .img{
     left: 36rem;
 }
